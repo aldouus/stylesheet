@@ -26,6 +26,18 @@
   left: 0;
   padding: 2rem;
   z-index: 1;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible .arrow {
+    outline: 2px solid #191919;
+    border: none;
+    border-radius: 100%;
+    scale: 1.03;
+    transition: 150ms ease-out;
+  }
 }
 
 .link-text {
