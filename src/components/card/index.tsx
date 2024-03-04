@@ -12,7 +12,7 @@ interface CardProps {
 
 export default function Card({href, src, alt, title, paragraph}: CardProps) {
   return(
-    <Link href={href} className={styles.link}>
+    <Link href={href} className={styles.link} target='_blank'>
       <div className={styles.wrapper}>
           <Image
             className={styles.icon}
