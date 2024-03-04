@@ -102,6 +102,7 @@ $txt: #191919;
 @media (pointer: coarse) {
   .cursor {
     display: none;
+    visibility: hidden;
   }
 }
 
