@@ -83,6 +83,16 @@ $txt: #191919;
   }
 }
 
+.link-text {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 @media screen and (max-width: 650px) {
   .main {
     max-width: 100%;

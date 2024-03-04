@@ -18,9 +18,9 @@ export default function Card({href, src, alt, title, paragraph}: CardProps) {
             className={styles.icon}
             src={src}
             alt={alt}
+            sizes='(max-width: 50px)'
             width={50}
             height={50}
-            objectFit='contain'
           />
           <h3 className={styles.title}>
             {title}

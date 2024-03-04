@@ -25,6 +25,7 @@ export default function Resources() {
         onMouseEnter={() => {setArrowIsHovered(true)}}
         onMouseLeave={() => {setArrowIsHovered(false)}}
       >
+        <span className={styles['link-text']}>Back</span>
         <Magnetic>
           <motion.svg animate={{scale: scale}} xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="20" viewBox="0 0 20 20" width="20"><g><rect fill="none" height="20" width="20"/></g><g><path d="M2,10c0,4.42,3.58,8,8,8s8-3.58,8-8s-3.58-8-8-8S2,5.58,2,10z M10,9.25l3,0v1.5l-3,0L10,13l-3-3l3-3L10,9.25z"/></g>
           </motion.svg>
@@ -92,6 +93,58 @@ export default function Resources() {
             paragraph='A comprehensive library of premade CSS animations'
             src='/images/animate.png'
             alt='Animate website icon'
+          />
+        </motion.div>
+        <motion.div
+          onMouseEnter={() => setCardIsHovered(true)}
+          onMouseLeave={() => setCardIsHovered(false)}
+          whileHover={{scale: 1.05}}
+          transition={{type: 'spring', duration: 0.5}}>
+          <Card
+            href='https://css-tricks.com/'
+            title='CSS Tricks'
+            paragraph='Some of the best articles for learning new CSS tricks (hence the name)'
+            src='/images/css-tricks.png'
+            alt='CSS Tricks website icon'
+          />
+        </motion.div>
+        <motion.div
+          onMouseEnter={() => setCardIsHovered(true)}
+          onMouseLeave={() => setCardIsHovered(false)}
+          whileHover={{scale: 1.05}}
+          transition={{type: 'spring', duration: 0.5}}>
+          <Card
+            href='https://css.glass/'
+            title='CSS Glass'
+            paragraph='A tool for creating the glassmorphism effect in CSS'
+            src='/images/glassmorphism.png'
+            alt='CSS Glass website icon'
+          />
+        </motion.div>
+        <motion.div
+          onMouseEnter={() => setCardIsHovered(true)}
+          onMouseLeave={() => setCardIsHovered(false)}
+          whileHover={{scale: 1.05}}
+          transition={{type: 'spring', duration: 0.5}}>
+          <Card
+            href='https://neumorphism.io'
+            title='Neomorphism'
+            paragraph='A tool for generating Soft-UI CSS code'
+            src='/images/neomorphism.png'
+            alt='Neomorphism.io website icon'
+          />
+        </motion.div>
+        <motion.div
+          onMouseEnter={() => setCardIsHovered(true)}
+          onMouseLeave={() => setCardIsHovered(false)}
+          whileHover={{scale: 1.05}}
+          transition={{type: 'spring', duration: 0.5}}>
+          <Card
+            href='https://frontendmasters.com/'
+            title='Frontend Masters'
+            paragraph='Work on high quality projects with a community of other devs'
+            src='/images/frontend-masters.png'
+            alt='Neomorphism.io website icon'
           />
         </motion.div>
       </div>

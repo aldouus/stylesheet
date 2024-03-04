@@ -53,6 +53,7 @@ export default function Home() {
               onMouseEnter={() => {setArrowIsHovered(true)}}
               onMouseLeave={() => {setArrowIsHovered(false)}}
             >
+              <span className={styles['link-text']}>Resources</span>
               <motion.svg
                 animate={{scale: scale}}
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,6 +80,7 @@ export default function Home() {
         href="https://www.twitter.com/aldicodes"
         target="_blank"
         className={styles.twitter}>
+        <span className={styles['link-text']}>Twitter</span>
         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <motion.path
             animate={{fill: twitterColor}}
