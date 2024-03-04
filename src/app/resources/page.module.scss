@@ -33,6 +33,12 @@
   mix-blend-mode: difference;
 }
 
+@media screen and (max-width: 650px) {
+  .back-link {
+    padding: 1rem;
+  }
+}
+
 @media (pointer: coarse) {
   .cursor {
     display: none;
