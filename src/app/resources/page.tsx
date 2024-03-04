@@ -144,7 +144,7 @@ export default function Resources() {
             title='Frontend Masters'
             paragraph='Work on high quality projects with a community of other devs'
             src='/images/frontend-masters.png'
-            alt='Neomorphism.io website icon'
+            alt='Frontend Masters website icon'
           />
         </motion.div>
       </div>
