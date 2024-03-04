@@ -38,9 +38,9 @@ export default function Home() {
           </svg>
         </motion.div>
         <div className={styles['title-wrapper']} >
-          <h1 className={styles.title}>
-            Something's in the works here
-          </h1>
+        <h1 className={styles.title}>
+          Something&apos;s in the works here
+        </h1>
         </div>
         <div className={styles['subtitle-wrapper']}>
           <h2 className={styles.subtitle}>
