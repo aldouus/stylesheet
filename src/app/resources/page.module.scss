@@ -1,0 +1,39 @@
+.main {
+  display: grid;
+  height: 100%;
+  background-color: #f2f2f2;
+  background-image: radial-gradient(#b5b5b5 1px, #f2f2f2 1px);
+  background-size: 25px 25px;
+  isolation: isolate;
+  text-wrap: pretty;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, 270px);
+  grid-auto-rows: 270px;
+  gap: 2rem;
+}
+
+.back-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  z-index: 1;
+}
+
+.cursor {
+  aspect-ratio: 1;
+  position: absolute;
+  background: #fff;
+  border-radius: 100%;
+  mix-blend-mode: difference;
+}
+
+@media (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}

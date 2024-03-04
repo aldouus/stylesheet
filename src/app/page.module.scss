@@ -1,0 +1,115 @@
+$txt: #191919;
+
+.main {
+  height: 100%;
+  display: grid;
+  place-content: center;
+  background-color: #f2f2f2;
+  background-image: radial-gradient(#b5b5b5 1px, #f2f2f2 1px);
+  background-size: 25px 25px;
+  isolation: isolate;
+  text-wrap: pretty;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  padding: 2rem;
+}
+
+.cursor {
+  aspect-ratio: 1;
+  position: absolute;
+  background: #fff;
+  border-radius: 100%;
+  mix-blend-mode: difference;
+}
+
+.cog {
+  width: 100px;
+  justify-self: center;
+  animation: cog 7s linear infinite;
+  svg {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.title {
+  margin: 0;
+  color: #191919;
+  font-size: 5rem;
+}
+
+.subtitle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $txt;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 2rem 1rem 2rem;
+  margin: 0;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible svg {
+    outline: 2px solid $txt;
+    border: none;
+    border-radius: 999px;
+    scale: 1.03;
+    transition: 150ms ease-out;
+  }
+}
+
+.twitter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 3rem;
+
+  svg {
+    scale: 1.5;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main {
+    max-width: 100%;
+  }
+  .cog {
+    width: 65px;
+    svg {
+      height: 65px;
+      width: 65px;
+    }
+  }
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}
+
+@keyframes cog {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
