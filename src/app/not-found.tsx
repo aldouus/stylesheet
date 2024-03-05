@@ -6,6 +6,7 @@ import styles from "./page.module.scss";
 
 export default function notFound() {
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { x, y } = useMousePosition();
   const size = 50;
 
