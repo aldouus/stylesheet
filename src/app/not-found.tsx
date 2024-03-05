@@ -3,15 +3,11 @@ import useMousePosition from "./utils/useMousePosition";
 import Link from "next/link";
 import { motion } from 'framer-motion';
 import styles from "./page.module.scss";
-import { useState } from "react";
-import { abort } from "process";
 
 export default function notFound() {
 
   const { x, y } = useMousePosition();
-  const [arrowIsHovered, setArrowIsHovered] = useState(false);
-  const size = arrowIsHovered ? 0 : 50;
-  const scale = arrowIsHovered ? 3 : 2;
+  const size = 50;
 
   return (
     <main className={styles.main}>
