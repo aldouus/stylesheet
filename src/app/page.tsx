@@ -48,7 +48,7 @@ export default function Home() {
           </h2>
           <Magnetic>
             <Link
-              href="./resources"
+              href="/resources"
               className={styles.arrow}
               onMouseEnter={() => {setArrowIsHovered(true)}}
               onMouseLeave={() => {setArrowIsHovered(false)}}
